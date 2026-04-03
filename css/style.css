@@ -203,45 +203,34 @@ main {
 .hero {
   padding: 1rem 0 2rem;
   animation: fadeUp 0.6s ease forwards;
-}
-
-.hero-layout {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem 2.5rem;
-}
-
-.hero-text {
-  flex: 1 1 17rem;
-  min-width: 0;
+  text-align: center;
 }
 
 .hero-photo-wrap {
-  margin: 0;
-  flex-shrink: 0;
-  padding-top: 0.25rem;
+  margin: 0.85rem auto 1.1rem;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .hero-photo {
-  width: 180px;
-  height: 180px;
+  width: min(240px, 72vw);
+  height: min(240px, 72vw);
   max-width: none;
+  margin: 0 auto;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid rgba(98, 182, 203, 0.4);
   box-shadow:
-    0 10px 28px rgba(12, 45, 72, 0.14),
-    0 2px 8px rgba(12, 45, 72, 0.08);
+    0 12px 32px rgba(12, 45, 72, 0.16),
+    0 4px 12px rgba(12, 45, 72, 0.1);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .hero-photo-wrap:hover .hero-photo {
-  transform: scale(1.04);
+  transform: scale(1.03);
   box-shadow:
-    0 14px 36px rgba(12, 45, 72, 0.18),
-    0 4px 12px rgba(98, 182, 203, 0.25);
+    0 16px 40px rgba(12, 45, 72, 0.2),
+    0 6px 16px rgba(98, 182, 203, 0.22);
 }
 
 @keyframes fadeUp {
@@ -260,7 +249,7 @@ main {
   font-weight: 700;
   color: var(--ocean-deep);
   letter-spacing: -0.03em;
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.25rem;
   line-height: 1.15;
 }
 
@@ -268,19 +257,20 @@ main {
   font-size: 1.15rem;
   color: var(--ocean-mid);
   font-weight: 500;
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.5rem;
 }
 
 .hero-intro {
   max-width: 38rem;
+  margin: 0 auto 2rem;
   color: var(--text-muted);
-  margin: 0 0 2rem;
 }
 
 .social-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  justify-content: center;
 }
 
 .social-link {
@@ -308,33 +298,6 @@ main {
 .social-link svg {
   flex-shrink: 0;
   opacity: 0.85;
-}
-
-@media (max-width: 768px) {
-  .hero-layout {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .hero-intro {
-    max-width: 100%;
-  }
-
-  .hero-text .social-row {
-    justify-content: center;
-  }
-
-  .hero-photo-wrap {
-    padding-top: 0;
-  }
 }
 
 /* Sections (About) */
