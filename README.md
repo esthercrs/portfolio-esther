@@ -20,9 +20,9 @@ A personal portfolio website presenting my background, projects, and experience 
 
 ## Technologies
 
-- **HTML** — Page structure and content  
-- **CSS** — Layout, styling, and responsive design  
-- **JavaScript** — Footer year, mobile navigation menu  
+- **HTML** - Page structure and content  
+- **CSS** - Layout, styling, and responsive design  
+- **JavaScript** - Footer year, mobile navigation menu  
 
 ## Deployment
 
